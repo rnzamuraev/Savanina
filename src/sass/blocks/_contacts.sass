@@ -1,0 +1,70 @@
+.contacts
+    padding: 8.5rem 0 5rem
+    &__wrapper 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__number
+        margin-left: 10rem
+        height: 17rem
+        font-size: 1.8rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        i
+            font-size: 2.5rem
+        .fa-phone-alt
+            font-size: 2rem
+            opacity: 0.8
+        .fa-envelope
+            font-size: 2.1rem
+            opacity: 0.8
+        a
+            line-height: 20px
+            color: $grey
+        span
+            margin-left: 1.9rem
+    &__mess
+        a
+            margin-right: 4rem
+        .fab
+            opacity: 0.8
+    &__title
+        margin: 0 0 1.4rem 6rem
+        font-size: 30px
+        line-height: 36px
+        font-style: italic
+    &__form
+        margin-right: 10rem
+    &__page-up
+        margin: 0 auto
+        margin-top: 6rem
+        width: 2rem
+        display: block
+       
+@media ( max-width: 992px )
+    .contacts
+        padding: 8.5rem 0 5rem
+        &__number
+            margin-left: 0rem
+            height: 15rem
+        &__form
+            margin-right: 0rem
+
+@media ( max-width: 768px )
+    .contacts
+        // padding: 8.5rem 0 5rem
+        &__wrapper 
+            display: flex
+            flex-wrap: nowrap
+            flex-direction: column-reverse
+            justify-content: space-between
+            align-items: center
+        &__number
+            margin-top: 6rem
+
+// @media ( max-width: 640px )
+//     
+
+// @media ( max-width: 480px )           

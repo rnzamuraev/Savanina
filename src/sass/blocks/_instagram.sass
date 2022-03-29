@@ -1,0 +1,29 @@
+.instagram
+    padding: 8.5rem 0 15rem
+    &__image
+        display: grid
+        grid-gap: 4rem
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        img
+            width: 100%
+
+@media ( max-width: 1200px )
+    .instagram
+        &__image
+            grid-gap: 1rem
+
+@media ( max-width: 992px )
+    .instagram
+        &__image
+            grid-gap: 3rem
+            grid-template-columns: 1fr 1fr
+@media ( max-width: 768px )
+    .instagram
+        &__image
+            grid-gap: 1rem
+
+// @media ( max-width: 640px )
+//     
+
+// @media ( max-width: 480px )
+//  

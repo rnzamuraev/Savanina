@@ -1,0 +1,52 @@
+.about
+    padding: 8.5rem 0 15rem
+    &__content
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+    &__left
+        width: 46rem
+        height: 100%
+        margin-left: 10rem
+    &__right
+        width: 40rem
+        line-height: 24px
+    &__title
+        font-size: 3.5rem
+        line-height: 42px
+    &__text
+        margin-top: 6rem
+        i
+            color: #D53333
+            animation-name: heartbeat
+            animation-duration: 2s
+            animation-iteration-count: infinite
+
+@media ( max-width: 1200px )
+    .about
+        &__left
+            margin-left: 0rem
+
+@media ( max-width: 992px )
+    .about
+        &__left
+            width: 30rem
+        &__text 
+            margin-top: 4rem
+
+@media ( max-width: 768px )
+    .about
+        &__content
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &__left
+            width: 46rem
+        &__right
+            margin-top: 2rem
+            width: 60rem
+
+// @media ( max-width: 640px )
+//     
+
+// @media ( max-width: 480px )  

@@ -1,0 +1,26 @@
+.footer
+    padding: 6.5rem 0
+    background-color: $grey
+    font-size: 1.6rem
+    &__content
+        display: flex
+        justify-content: space-between
+    &__copy
+        color: $white
+        span
+            text-transform: uppercase
+            color: $white
+            
+@media ( max-width: 640px )
+    .footer
+        padding: 4rem 0
+        // font-size: 1.6rem
+        &__content
+            // display: flex
+            justify-content: center
+            flex-direction: column
+            text-align: center
+
+@media ( max-width: 480px )
+  .container 
+    margin: 0 1rem 0 1rem

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    top: 100px;
+  }
+  25% {
+    top: 50px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 75px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 100px;
+  }
+  25% {
+    top: 50px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 75px;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+html * {
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5b5b5b;
+  position: relative;
+}
+
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #fff;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+hr {
+  margin: 4rem 0 7.5rem;
+}
+
+.header {
+  padding-top: 3rem;
+  width: 100%;
+  position: absolute;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.promo {
+  padding: 21.5rem 0 20.5rem;
+  background: url("../img/savanina.png") center center/cover no-repeat;
+  color: #fff;
+  font-weight: 400;
+}
+
+.promo__title {
+  font-family: 'Cormorant', serif;
+  font-size: 20rem;
+  line-height: 200px;
+  text-align: center;
+}
+
+.promo__text {
+  margin-top: -1.6rem;
+  font-size: 4rem;
+  line-height: 48px;
+  text-align: center;
+}
+
+.title {
+  font-style: italic;
+  font-size: 12rem;
+  line-height: 145px;
+}
+
+.about {
+  padding: 8.5rem 0 15.7rem;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about__left {
+  width: 46rem;
+  height: 55rem;
+  margin-left: 10rem;
+}
+
+.about__right {
+  width: 40rem;
+  line-height: 24px;
+}
+
+.about__title {
+  font-size: 3.5rem;
+  line-height: 42px;
+}
+
+.about__text {
+  margin-top: 6rem;
+}
+
+.about__text i {
+  color: #D53333;
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.instagram {
+  padding: 10rem 0 13rem;
+}
+
+.instagram__image {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 4rem;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contacts {
+  padding: 8.5rem 0 4rem;
+}
+
+.contacts__page-up {
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 2rem;
+  display: block;
+}
+
+.footer {
+  padding: 6.5rem 0;
+  background-color: #5b5b5b;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__content span {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

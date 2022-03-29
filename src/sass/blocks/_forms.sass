@@ -1,0 +1,47 @@
+.form
+    padding: 4rem 0 5.5rem
+    width: 46rem
+    height: 54rem
+    display: flex
+    flex-direction: column
+    background-color: $white
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25)
+    input,
+    textarea
+        margin: 0 auto
+        padding-top: 2.5rem
+        width: 34rem
+        height: 6rem
+        border: none
+        border-bottom: 1px solid rgba(91, 91, 91, 0.5)
+        font-size: 1.6rem
+        line-height: 19px
+        opacity: 0.8
+        outline: none
+    input
+        margin-bottom: 1rem
+    textarea
+        height: 11rem
+    &__button
+        width: 26rem
+        height: 6rem
+        background-color: $white
+        &:hover
+            background-color: $white-grey
+    p
+        margin-top: 1rem
+        font-size: 14px
+        line-height: 17px
+        opacity: 0.8
+        text-align: center
+    &_popap
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+@media ( max-width: 992px )
+    .form
+        &__button
+            &:hover
+                background-color: $white
