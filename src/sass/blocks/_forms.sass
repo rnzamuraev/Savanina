@@ -1,7 +1,7 @@
 .form
     padding: 4rem 0 5.5rem
     width: 46rem
-    height: 54rem
+    // height: 54rem
     display: flex
     flex-direction: column
     background-color: $white
@@ -34,14 +34,26 @@
         line-height: 17px
         opacity: 0.8
         text-align: center
-    &_popap
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
 
 @media ( max-width: 992px )
     .form
         &__button
             &:hover
                 background-color: $white
+
+@media ( max-width: 480px )   
+    .form
+        padding: 3rem 0 3.5rem
+        width: 30rem
+        input,
+        textarea
+            margin: 0 auto
+            padding-top: 2.5rem
+            width: 24rem
+            height: 4rem
+            font-size: 1.6rem
+            line-height: 19px
+        input
+            margin-bottom: 1rem
+        textarea
+            height: 8rem

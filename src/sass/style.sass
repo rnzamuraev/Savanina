@@ -30,6 +30,9 @@ body
       color: $white
       text-decoration: none
 
+hr
+  margin: 4rem 0 7.5rem
+
 .container 
   max-width: 1160px
   margin: 0 auto
@@ -46,6 +49,8 @@ body
 @media ( max-width: 768px )
   .container 
     max-width: 600px
+  hr
+    margin: 0rem 0 4rem
 
 @media ( max-width: 640px )
   .container 
@@ -53,16 +58,14 @@ body
 
 @media ( max-width: 480px )
   .container 
-    margin: 0 1rem 0 1rem
-
-hr
-  margin: 4rem 0 7.5rem
+    max-width: 300px
 
 @import "blocks/header"
 @import "blocks/promo"
 @import "blocks/title"
 @import "blocks/about"
 @import "blocks/work"
+@import "blocks/carousel"
 @import "blocks/services"
 @import "blocks/button"
 @import "blocks/instagram"

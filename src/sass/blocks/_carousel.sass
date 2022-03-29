@@ -1,0 +1,76 @@
+.carousel
+    margin: 0 auto
+    max-width: 60rem
+    display: none
+    &__slides
+        width: 100%
+        height: 40rem
+        position: relative
+        box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75) 
+    &__slide 
+        width: 100%
+        height: 100%
+        display: none
+        overflow: hidden
+        img
+            width: 100%
+    .active 
+        display: block
+        background-color: $grey
+    &__arrow-left,
+    &__arrow-right
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    &__arrow-left
+        left: 1rem
+    &__arrow-right
+        right: 1rem
+    #btn-prev,
+    #btn-next
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 5rem
+        background-color: $grey
+        opacity: 0.3
+        cursor: pointer
+        transition: opacity 0.2s ease-in-out
+        &:hover,
+        &:hover 
+            opacity: 0.6
+    #btn-next
+        left: auto
+        right: 0
+    &__dots 
+        margin-top: 2rem
+        display: flex
+        justify-content: center
+    &__dot
+        width: 1.5rem
+        height: 1.5rem
+        border-radius: 50%
+        background-color: $white
+        margin-right: 1.5rem
+        cursor: pointer
+        &:last-child
+            margin-right: 0 
+        
+
+@media ( max-width: 768px )
+    .carousel
+        &_visible
+            display: block
+
+
+@media ( max-width: 640px )
+    .carousel
+        &__slides
+            height: 30rem
+
+
+@media ( max-width: 480px )  
+    .carousel
+        &__slides
+            height: 20rem     

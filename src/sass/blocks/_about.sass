@@ -9,7 +9,7 @@
         height: 100%
         margin-left: 10rem
     &__right
-        width: 40rem
+        max-width: 40rem
         line-height: 24px
     &__title
         font-size: 3.5rem
@@ -36,6 +36,7 @@
 
 @media ( max-width: 768px )
     .about
+        padding: 6.5rem 0 8rem
         &__content
             display: flex
             justify-content: space-between
@@ -44,9 +45,15 @@
             width: 46rem
         &__right
             margin-top: 2rem
-            width: 60rem
+            max-width: 60rem
 
 // @media ( max-width: 640px )
 //     
 
-// @media ( max-width: 480px )  
+@media ( max-width: 480px ) 
+    .about
+        &__left
+            width: 30rem 
+        &__title
+            font-size: 3rem
+            line-height: 38px

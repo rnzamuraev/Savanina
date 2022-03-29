@@ -50,11 +50,20 @@
 
 @media ( max-width: 768px )
      .services
+        padding: 6.5rem 0 8rem
         &__list
             grid-gap: 2rem 1rem
 
-// @media ( max-width: 640px )
-//     
+@media ( max-width: 640px )
+    .services
+        &__list
+            margin-left: 5rem
+            grid-gap: 4rem 0rem
+            grid-template-columns: 36rem
 
-// @media ( max-width: 480px )
-//     
+@media ( max-width: 480px )
+    .services
+        &__list
+            margin-left: 0
+            grid-template-columns: 1fr
+    
